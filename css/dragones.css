@@ -1,0 +1,116 @@
+/* Estilos específicos para la página de dragones */
+
+.intro-dragones {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.dragones-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.dragon-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.dragon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.dragon-card h3 {
+    background-color: var(--primary-color);
+    color: white;
+    margin: 0;
+    padding: 15px;
+    font-size: 1.3rem;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.valyrio-name {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+.dragon-info {
+    padding: 20px;
+}
+
+.dragon-description {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.dragon-valyrio {
+    font-style: italic;
+    color: var(--primary-color);
+    padding: 10px;
+    background-color: rgba(142, 30, 30, 0.05);
+    border-left: 3px solid var(--primary-color);
+    border-radius: 0 4px 4px 0;
+}
+
+.dragon-facts {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 25px;
+    margin: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dragon-facts h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+.dragon-facts ul {
+    padding-left: 20px;
+}
+
+.dragon-facts li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.dragon-facts em {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dragones-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .dragon-card h3 {
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+    
+    .dragon-info {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dragon-facts {
+        padding: 15px;
+    }
+    
+    .dragon-facts li {
+        margin-bottom: 10px;
+    }
+}

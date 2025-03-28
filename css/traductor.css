@@ -1,0 +1,145 @@
+/* Estilos específicos para la página del traductor */
+
+.traductor-container {
+    margin: 30px 0;
+}
+
+.traductor-form {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-group, .output-group {
+    margin-bottom: 20px;
+}
+
+.input-group label, .output-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.traductor-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+.btn-accent:hover {
+    background-color: #c09c30;
+}
+
+.btn-accent:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+.resultado {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    min-height: 100px;
+}
+
+.traduccion-texto {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.traduccion-pronunciacion {
+    font-style: italic;
+    color: #666;
+}
+
+.favoritos-container {
+    margin: 30px 0;
+}
+
+.favoritos-lista {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 100px;
+}
+
+.favorito-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.favorito-item .espanol {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.favorito-item .valyrio {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.favorito-item .pronunciacion {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.favorito-item .eliminar-favorito {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.no-favoritos {
+    color: #666;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .traductor-buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}

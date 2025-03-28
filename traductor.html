@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor Español-Alto Valyrio - Curso de Alto Valyrio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/traductor.css">
+    <link rel="stylesheet" href="css/traductor-extras.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Curso Completo de Alto Valyrio</h1>
+            <p class="tagline">Traductor Español-Alto Valyrio</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="modulo1.html">Alfabeto y Pronunciación</a></li>
+                <li><a href="modulo2.html">Gramática Básica</a></li>
+                <li><a href="modulo3.html">Vocabulario Esencial</a></li>
+                <li><a href="modulo4.html">Conjugación de Verbos</a></li>
+                <li><a href="dragones.html">Dragones</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="module-content">
+                <h2>Traductor Español-Alto Valyrio</h2>
+
+                <section class="intro-traductor">
+                    <p>Bienvenido al traductor de español a Alto Valyrio. Esta herramienta te permite traducir palabras individuales o frases completas del español al fascinante idioma de los Targaryen. Además de la traducción, obtendrás la pronunciación correcta y podrás guardar tus frases favoritas para consultarlas más tarde.</p>
+                    <p class="valyrian-quote"><em>Skorkydoso ȳdragon Valyrīha?</em> (¿Cómo hablar Alto Valyrio?)</p>
+                </section>
+
+                <section class="traductor-container">
+                    <div class="traductor-form">
+                        <div class="input-group">
+                            <label for="texto-espanol">Texto en Español:</label>
+                            <textarea id="texto-espanol" placeholder="Escribe una palabra o frase en español..." rows="4"></textarea>
+                        </div>
+                        
+                        <div class="traductor-buttons">
+                            <button id="btn-traducir" class="btn">Traducir</button>
+                            <button id="btn-limpiar" class="btn btn-secondary">Limpiar</button>
+                        </div>
+                        
+                        <div class="output-group">
+                            <label>Traducción en Alto Valyrio:</label>
+                            <div id="resultado-traduccion" class="resultado">
+                                <p class="traduccion-texto"></p>
+                                <p class="traduccion-pronunciacion"></p>
+                            </div>
+                            <button id="btn-guardar-favorito" class="btn btn-accent" disabled>Guardar como Favorito</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="favoritos-container">
+                    <h3>Mis Frases Favoritas</h3>
+                    <div id="lista-favoritos" class="favoritos-lista">
+                        <p class="no-favoritos">No tienes frases favoritas guardadas.</p>
+                        <!-- Las frases favoritas se añadirán aquí dinámicamente -->
+                    </div>
+                </section>
+
+                <section class="instrucciones">
+                    <h3>Instrucciones de Uso</h3>
+                    <ol>
+                        <li>Escribe una palabra o frase en español en el cuadro de texto.</li>
+                        <li>Haz clic en el botón "Traducir" para obtener la traducción en Alto Valyrio.</li>
+                        <li>La traducción aparecerá junto con su pronunciación.</li>
+                        <li>Si deseas guardar la traducción, haz clic en "Guardar como Favorito".</li>
+                        <li>Tus frases favoritas se guardarán en la sección "Mis Frases Favoritas".</li>
+                        <li>Para borrar el texto y comenzar de nuevo, haz clic en "Limpiar".</li>
+                    </ol>
+                </section>
+
+                <section class="limitaciones">
+                    <h3>Limitaciones del Traductor</h3>
+                    <p>Este traductor utiliza un diccionario de palabras y frases comunes en Alto Valyrio, junto con reglas gramaticales básicas para construir oraciones. Sin embargo, tiene algunas limitaciones:</p>
+                    <ul>
+                        <li>El vocabulario es limitado a las palabras conocidas del Alto Valyrio.</li>
+                        <li>Las construcciones gramaticales muy complejas pueden no traducirse con total precisión.</li>
+                        <li>Algunos modismos o expresiones culturales específicas pueden no tener equivalentes directos.</li>
+                        <li>La traducción se basa en las reglas documentadas del Alto Valyrio creado por David J. Peterson.</li>
+                    </ul>
+                    <p>Para un aprendizaje más profundo del idioma, te recomendamos explorar los módulos del curso.</p>
+                </section>
+
+                <div class="navigation-buttons">
+                    <a href="modulo4.html" class="btn">← Volver al Módulo 4</a>
+                    <a href="index.html" class="btn">Volver al Inicio</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Curso de Alto Valyrio. Todos los derechos reservados.</p>
+            <p class="valyrian-quote"><em>Kirimvose valȳti!</em> (¡Muchas gracias!)</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/diccionario.js"></script>
+    <script src="js/reglas_gramaticales.js"></script>
+    <script src="js/traductor.js"></script>
+</body>
+</html>

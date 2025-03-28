@@ -1,0 +1,404 @@
+/* Estilos generales para el sitio web del Curso de Alto Valyrio */
+
+/* Variables de colores */
+:root {
+    --primary-color: #8e1e1e; /* Rojo Targaryen */
+    --secondary-color: #222222; /* Negro */
+    --accent-color: #d4af37; /* Dorado */
+    --background-color: #f5f5f5; /* Gris claro */
+    --text-color: #333333; /* Gris oscuro */
+    --header-bg: #111111; /* Negro para el encabezado */
+    --footer-bg: #111111; /* Negro para el pie de página */
+    --card-bg: #ffffff; /* Blanco para las tarjetas */
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: var(--header-bg);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/dragon-banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+header .tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Navegación */
+nav {
+    background-color: var(--primary-color);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Contenido principal */
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+h3 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Tarjetas de módulos */
+.modules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.module-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.module-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.module-card h3 {
+    color: var(--primary-color);
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #6e1717;
+}
+
+.btn-large {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+}
+
+/* Sección CTA */
+.cta {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.cta h2 {
+    color: white;
+    border-bottom: none;
+}
+
+.cta .btn {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.cta .btn:hover {
+    background-color: #c09c30;
+}
+
+/* Citas en Valyrio */
+.valyrian-quote {
+    font-style: italic;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+/* Contenido de los módulos */
+.module-content {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    overflow-x: auto;
+    display: block;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Ejercicios */
+.ejercicio {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-left: 4px solid var(--accent-color);
+    margin: 20px 0;
+}
+
+.ejercicio h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--footer-bg);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Navegación entre módulos */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* Botón volver arriba */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: #6e1717;
+}
+
+/* Menú móvil */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+    
+    nav .container {
+        position: relative;
+    }
+    
+    .mobile-nav-list {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    
+    .mobile-nav-list.show {
+        max-height: 300px;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 12px;
+    }
+    
+    .modules {
+        grid-template-columns: 1fr;
+    }
+    
+    .navigation-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .navigation-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 30px 0;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .module-content {
+        padding: 20px 15px;
+    }
+    
+    .ejercicio {
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+}
